@@ -12,7 +12,6 @@ export function Floor() {
         <meshStandardMaterial map={texture} />
       </mesh>
 
-      {/* ice cream 모델 */}
       <IceCreamModel />
     </group>
   );
