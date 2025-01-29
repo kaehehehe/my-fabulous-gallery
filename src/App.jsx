@@ -29,15 +29,15 @@ const App = () => {
       />
       <Canvas
         style={{ backgroundColor: "#887d69" }}
-        camera={{ fov: 45, position: [0, 1, 2] }}
+        camera={{ fov: 20, position: [0, -3, 2] }}
       >
         <ambientLight intensity={0.8} />
         <directionalLight position={[5, 5, 1]} intensity={0.5} />
-        <Environment preset="night" />
+        <Environment preset="night" environment />
         <Scene setPreviewLink={setPreviewLink} />
         <OrbitControls
           minDistance={0.1}
-          maxDistance={5}
+          maxDistance={4}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />

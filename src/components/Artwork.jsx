@@ -6,7 +6,7 @@ export function Artwork({ rotationY, scene, position, scale, onClick }) {
 
   return (
     <group rotation-y={rotationY} onClick={onClick}>
-      <mesh position={[0, -1, -4]}>
+      <mesh position={[0, -0.75, -4]}>
         <boxGeometry args={[1, 0.7, 1]} />
         {Array.from({ length: 5 }).map((_, index) => (
           <meshStandardMaterial
